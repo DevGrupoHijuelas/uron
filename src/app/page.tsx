@@ -13,10 +13,13 @@ export default function Home() {
       />
 
       {/* Mensaje */}
-      <h1 className="text-4xl sm:text-6xl font-bold text-gray-800 dark:text-white">
+      <h1 className="text-4xl sm:text-6xl font-bold text-white">
         Próximamente
       </h1>
-      <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mt-4 max-w-md">
+      <h1 className="text-4xl sm:text-6xl font-bold text-white">
+        en grupohijuelas
+      </h1>
+      <p className="text-lg sm:text-xl text-gray-400 mt-4 max-w-md">
         Estamos trabajando en una experiencia increíble. ¡Vuelve pronto para conocer más!
       </p>
     </div>
