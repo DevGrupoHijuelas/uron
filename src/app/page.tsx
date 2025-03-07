@@ -23,6 +23,7 @@ export default function Home() {
         Estamos trabajando en una experiencia increíble. ¡Vuelve pronto para conocer más!
       </p>
       <p>primera branch</p>
+      <p>segundo branch</p>
     </div>
   );
 }
