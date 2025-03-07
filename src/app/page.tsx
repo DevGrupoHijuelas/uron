@@ -22,6 +22,7 @@ export default function Home() {
       <p className="text-lg sm:text-xl text-gray-400 mt-4 max-w-md">
         Estamos trabajando en una experiencia increíble. ¡Vuelve pronto para conocer más!
       </p>
+      <p>primera branch</p>
     </div>
   );
 }
