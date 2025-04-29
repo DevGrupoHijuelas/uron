@@ -1,28 +1,53 @@
-import Image from "next/image";
+import SectionA from "../components/Body/SectionA";
+import SectionB from "../components/Body/SectionB";
+import SectionC from "../components/Body/SectionC";
+import SectionD from "../components/Body/SectionD";
+import SectionE from "../components/Body/SectionE";
+import Menu from "../components/Header/Menu";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-center p-6">
-      {/* Logo */}
-      <Image
-        src="/img/lumina green a.webp" // Cambia esto por la ruta de tu logo
-        alt="Logo principal"
-        width={250}
-        height={250}
-        className="mb-6"
-      />
+    <div className="">
 
-      {/* Mensaje */}
-      <h1 className="text-4xl sm:text-6xl font-bold text-white">
-        Próximamente
-      </h1>
-      <p className="text-lg sm:text-xl text-gray-400 mt-4 max-w-md">
-        Estamos trabajando en una experiencia increíble. ¡Vuelve pronto para conocer más!
-      </p>
-      <div className="contacto text-4xl sm:text-sm font-bold text-white mt-4">
-        <p>Puedes contactarnos en el siguiente correo electrónico</p>
-        <p>ventas@luminagreen.cl</p>
-      </div>
+      {/* Menú de Navegación */}
+      <Menu />
+
+      {/* Sección Principal */}
+      <SectionA />
+
+      {/* Sección Video */}
+      <SectionB />  
+
+      {/* Sección Vision */}
+      <SectionC/>
+      
+      {/* Sección Mision */}
+      <SectionD/>
+
+      {/* Sección Productos */}
+      <SectionE/>
+      
+
+
+
+      {/* Sección Contacto */}
+      <section className="py-16 bg-gray-100 text-gray-800">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-semibold">Contacto</h2>
+          <p className="text-lg mt-4">
+            Si tienes alguna pregunta, no dudes en ponerte en contacto con nosotros. ¡Estaremos encantados de ayudarte!
+          </p>
+        </div>
+      </section>
+      
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white py-6">
+        <div className="text-center">
+          <p>&copy; 2025 Lu. Todos los derechos reservados.</p>
+        </div>
+      </footer>
     </div>
   );
-}
+};
+
+export default Home;

@@ -1,0 +1,32 @@
+"use client";
+import React from 'react';
+
+const SectionC = () => {
+  return (
+    <section
+      id="sectionC"
+      className="bg-black bg-[url('/img/Macetas_1.jpg')] bg-cover bg-center bg-no-repeat h-screen py-16 text-white flex items-center justify-center"
+    >
+      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-8">
+        {/* Columna izquierda */}
+        <div className="flex-1">
+          <img
+            src="/img/vision.jpeg"
+            alt="Macetero iluminado de Luminagreen"
+            className="w-full h-full object-cover rounded-md shadow-lg"
+          />
+        </div>
+
+        {/* Columna derecha */}
+        <div className="flex-[1.2] flex flex-col justify-center">
+          <h2 className="text-3xl font-semibold text-center md:text-left">Visión</h2>
+          <p className="text-lg mt-4">
+            Somos un equipo de emprendedores apasionados por la biotecnología. Creamos soluciones que fusionan la sabiduría de la naturaleza con el poder de la tecnología para iluminar un futuro más sostenible y consciente.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SectionC;

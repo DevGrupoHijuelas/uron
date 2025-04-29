@@ -1,0 +1,69 @@
+"use client";
+import { useState } from "react";
+
+const SectionA = () => {
+  const [color, setColor] = useState(0); // Estado para el color
+
+  // Manejar el cambio del slider
+  const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setColor(+event.target.value); // Actualizar el valor del color según el slider
+  };
+
+  return (
+    <div className="h-screen bg-black bg-[url('/img/LINEAS__.png')] bg-contain bg-center bg-no-repeat text-white">
+      <div className="max-w-2xl mx-auto text-center h-full flex justify-between items-center"> {/* Flexbox para la disposición lado a lado */}
+        {/* Contenedor para las capas */}
+        <div className="w-full h-full relative flex-1"> {/* Ocupa la mitad de la pantalla */}
+          {/* capa 1 - parte superior sin filtro */}
+          <div
+            className="absolute w-full h-1/1 bottom-0"
+            style={{
+              backgroundImage: 'url("/img/2.png")',
+              backgroundPosition: 'center center',
+              backgroundSize: 'cover',
+              zIndex: 1, // Capa inferior
+            }}
+          >
+          </div>
+          {/* capa 2 - parte inferior con hue-rotate */}
+          <div
+            className="absolute w-full h-1/1 bottom-0"
+            style={{
+              backgroundImage: 'url("/img/2.png")',
+              backgroundPosition: 'center center',
+              backgroundSize: 'cover',
+              filter: `hue-rotate(${color}deg) saturate(0.3) brightness(1.0) contrast(0.9)`,
+              zIndex: 2, // Capa superior
+              clipPath: 'inset(43.5% 0 0 0)', // Solo aplica el filtro a la mitad inferior
+            }}
+          >
+          </div>
+        </div>
+
+        {/* Sección de texto al lado derecho */}
+        <div className="w-1/3 p-6 lg:p-8 flex flex-col justify-center items-start"> {/* 1/3 del ancho */}
+          <h2 className="text-2xl lg:text-3xl font-semibold text-white">
+            Lumina Green
+          </h2>
+          <p className="text-base lg:text-lg mt-4 text-white">
+            Lumina Green es una innovadora lámpara que aprovecha la energía natural
+            de una planta viva para generar luz, fusionando sostenibilidad y tecnología
+            de una manera única.
+          </p>
+          {/* Slider para cambiar el color */}
+          <input
+            type="range"
+            min="0"
+            max="360"
+            value={color}
+            onChange={handleSliderChange}
+            className="mt-6 w-3/4 lg:w-1/2"
+          />
+          <p className="mt-2 text-white">Color de la maceta</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SectionA;
