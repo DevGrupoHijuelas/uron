@@ -3,25 +3,25 @@ import React, { useEffect, useRef, useState } from "react";
 
 const products = [
   {
-    src: "../Icons/ICONOS-01.svg",
+    src: "/icons/ICONOS-01.svg",
     alt: "Producto 1",
     title: "Innovación consciente",
     review: "Integra tecnología avanzada con respeto por el medio ambiente, promoviendo un estilo de vida más responsable.",
   },
   {
-    src: "../Icons/ICONOS-06.svg",
+    src: "/icons/ICONOS-06.svg",
     alt: "Producto 2",
     title: "Sostenibilidad",
     review: "Diseñado para reducir el impacto ecológico, ofreciendo soluciones efectivas sin comprometer la salud del planeta.",
   },
   {
-    src: "/Icons/ICONOS-05.svg",
+    src: "/icons/ICONOS-05.svg",
     alt: "Producto 3",
     title: "Armonía",
     review: "Equilibra ciencia y naturaleza para crear un ambiente saludable en tu hogar, con beneficios a largo plazo.",
   },
   {
-    src: "/Icons/ICONOS-04.svg",
+    src: "/icons/ICONOS-04.svg",
     alt: "Producto 4",
     title: "Eficiencia energética",
     review: "Optimiza recursos naturales con fórmulas 100% biodegradables, garantizando rendimiento y responsabilidad ecológica.",
