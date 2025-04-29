@@ -10,7 +10,7 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { href: "https://facebook.com", icon: "../icons/Facebook.svg", alt: "Facebook" },
+  { href: "https://facebook.com", icon: "../Icons/Facebook.svg", alt: "Facebook" },
   { href: "https://instagram.com", icon: "/icons/Instagram.svg", alt: "Instagram" },
   { href: "https://whatsapp.com", icon: "/icons/Whatsapp.svg", alt: "Whatsapp" },
   { href: "https://youtube.com", icon: "/icons/Youtube.svg", alt: "Youtube" },
