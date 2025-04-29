@@ -3,13 +3,13 @@ import React, { useEffect, useRef, useState } from "react";
 
 const products = [
   {
-    src: "/Icons/ICONOS-01.svg",
+    src: "../Icons/ICONOS-01.svg",
     alt: "Producto 1",
     title: "Innovación consciente",
     review: "Integra tecnología avanzada con respeto por el medio ambiente, promoviendo un estilo de vida más responsable.",
   },
   {
-    src: "/Icons/ICONOS-06.svg",
+    src: "../Icons/ICONOS-06.svg",
     alt: "Producto 2",
     title: "Sostenibilidad",
     review: "Diseñado para reducir el impacto ecológico, ofreciendo soluciones efectivas sin comprometer la salud del planeta.",
