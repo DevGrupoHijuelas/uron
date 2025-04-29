@@ -24,6 +24,7 @@ const Menu = () => {
   return (
     <div>
       {/* Navbar */}
+      {/* hola */}
       <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 bg-black text-white shadow-md">
         {/* Logo + Desktop Menu */}
         <div className="flex items-center space-x-12">
